@@ -1,0 +1,789 @@
+v2023.05.02d:
+
+* Fixed items in crates disappearing with them and reappearing later when breaking them
+
+v2023.05.02c:
+
+* Fixed not being able to put down the coffin
+
+v2023.05.02b:
+
+* Fixed some disappearing with physics lock
+
+v2023.05.02:
+
+* Pallet physics lock trigger extended down
+* Attachable things' collision can be toggled with the reload key (default: R)
+* Attach mode can be toggled with Shift+R (holding run and pressing reload)
+to attach the object's the closest point or its origin, so it's no longer per item
+* It is now saved where physics locked things are locked, 
+so far physics lock triggers just locked quickly whatever was in them at load,
+and baskets have higher priority, than trunks and such,
+these may make physics lock storages more convenient to use
+* Fixed being able to remove the license plate through the car
+And a maybe mod related bug
+
+v2023.04.19c:
+
+* Bikes driving got much better, they spin less likely and should be less jumpy,
+and their keyboard steering speed decreases less at higher speeds
+* Removed not being able to drink or pour from heavy containers
+* Fixed being able to attach baskets and such to air if they have other attachables in them
+* Pallets do not physics lock new things while picked up
+to make it easier to move them around without grabbing random things
+but already locked things will stay on it
+* Fixed attachables loading to the hitch when the should be somewhere else on the car
+* Adjusted fridge collider very slightly
+* Raised Car02 and Car02k's suspension
+(couldn't stiffen it :( that made it roll over)
+* Increased the car hauler's rear wheels sideways friction to spin a bit less likely
+(that too rolled over with even more friction)
+* Since the new menu, you can have old saves from before the menu with the same name as a save after it
+This is because some invisible character got added to the name of the save
+Which I removed now, so now everything is back to normal
+(except that you now can have same named saves from before and after this update)
+
+v2023.04.17b:
+
+* Added spirit water bubble level tool instrument thingy
+* Added new trophy
+(and they should spawn now)
+* Fixed being able to attach things to air if looking at buildings or the terrain
+* Fixed the bus locking its own wheels again :@
+* collider size of locked wheels now update with different wheels
+
+v2023.04.15c:
+
+* Fixed not being able to attach trailers to the big vehicle
+* Added "Reduced Debris" option to the misc tab in the settings
+(if enabled, breakable things fall into less pieces and those disappear too)
+* Poles are now tilted, and most of the road side buildings are connected to them
+* Fixed some attachables getting frozen in air on loading
+* Changed baskets and such attaching again, they should now attach with their
+closest point to the closest point on the looked at surface, not exactly to the point
+you look at
+
+v2023.04.14c:
+
+* Fixed not being able to attach trailers
+(broke with the previous fix)
+
+v2023.04.14b:
+
+* Fixed licence plate and other attachables not loading correctly
+when attached to the slots or the bike seats
+* Attaching baskets and a few attachable things should be now easier
+because they no longer use their center, but their closest point for attaching
+* Bikes's steering with keyboard slower on higher speeds
+and they should bounce slightly less
+* Fixed player preview not visible in player tab
+* Fixed the bus locking its own wheels
+* Adjusted trailer center of mass to make it bit more stable
+(not the car transporter, but the old small one)
+* Pallet is now attachable and has physics lock zone
+* Rail-part chunk something is now attachable
+
+v2023.04.11c:
+
+* Fixed some errors from the bug reports
+* Added some things to make older mods work
+
+v2023.04.08b:
+
+* Removed VR from the main branch
+(it is now in the betas called vrtest, it also has the multiplayer)
+* Fixed bike's seats color not saving
+* Fixed the new vehicle's tank pouring angle
+
+v2023.04.06c:
+
+* Fixed coffin, bed and rear seats not spawning
+
+v2023.04.06b:
+
+* Few vehicles have removable fuel tanks
+(when loading older saves those vehicles will not have a tank)
+* Fuel cans, oil cans and such can be installed as tanks
+* Car interior lights turn on when the doors are opened
+(the lights have 3 states: always off, always on, only on when doors are open)
+* Added cloud shadow setting (it can be disabled)
+* Added deferred rendering path setting
+(this may run a bit better, than forward, which was the default)
+* Distant terrain setting now disables the second camera (Distant Terrain Camera) when it's disabled
+* Physics lock triggers now lock vehicle's wheels if its handbrake is on,
+so transporting them is more stable
+* Added new vehicle
+* Added new vehicle
+* Added new vehicle
+* Added new vehicle variations
+* Added Stereoscopic 3D options (Anaglyph, SBS, Depth)
+* Added metal detector
+* Stuff can be dug up from underground with the shovel
+* Added stuff in boxes
+* Added ramp
+* Added coffin
+* Added Sky Objects setting which affects, clouds, stars and airplanes in the sky
+(and also disables the Sky Camera when it's disabled)
+* Added VR Look around (Only Headset, no motion controllers yet)
+* Toilets can now be installed instead of the rear seats for kombi cars
+* Fixed not being able to put Car08's right mirror in inventory
+* Fixed a bug with attachables and physics lock
+* Fixed saving on bike
+* Fixed paintings sometimes not being random
+* Fixed compass needle not rotating around
+* Fixed invisible ghost siphon hoses remaining when
+leaving behind a siphon hose, same with ragdolls
+* Fixed 360° Camera being small if on an other monitor
+* Changed some mirror stuff a bit
+* Succesfully moved to new Unity version (from 2019.2.21f1 to 2021.3.15f1)
+(And finally to 2021.3.18f1, but not on purpose)
+* Did something to the old heathaze
+* Sun defender's text changed from "Continue" to use "Adjust"
+* Sun is blinding again when you drive west around sunset
+* Adjusted plexiglass, now those are blinding too
+* The friendly human npcs added in the scary update no longer spawn in peaceful mode
+* From now on the Broom can be put in inventory
+* whiter wall in starting house
+
+
+v2022.11.11:
+
+* Fixed lag when loading older saves?
+
+
+v2022.11.10:
+
+* Added inventory icons for:
+-book
+-crate debrish
+* New pole cable (eats a bit less performance (at least from the cpu))
+* Few other smaller script and model optimizations
+
+
+v2022.11.09:
+
+* Fixed a few lag spikes and a small continous something
+* Fixed food shooting
+* Fixed no physics on stuff after an error (hopefully)
+* Books can now be stored in inventory (no icon yet)
+
+
+v2022.11.04c:
+
+* Added new big building
+* Added new friendly npc
+(mainly for halloween, but it will stay)
+* Added new flashlight, chair, misc stuff
+* Added decoration ai (bat)
+* Fixed truck doors openable even when dismounted 
+* Fixed beer bottle bottom gib model uv
+* Fixed rabbit blinding or deafening with headshot
+* Fixed car camera recender winding up
+* Fixed a building which should
+only spawn far from the road not spawning anywhere
+* Changed road side building generation:
+-Fixed road side buildings not loading at the same place
+-Poles may still move a bit
+-Buildings should repeating less
+(Loading saves from previous versions still works,
+but the same buildings will not be there near the road)
+* Rabbits no longer insta kill (but still fast)
+* A few doors in the starting house can be opened wider
+
+
+v2022.10.14:
+
+* Added new beer bottle material
+* Added 2 new door glass materials at the start house
+* Fixed the bus's RPM gauge not working
+* Fixed a few things missing from a few vehicles
+(like gear sticks, and the leafsprings of the truck) 
+* Fixed the new car's trunk (or frunk) physics lock trigger
+not reaching small things around the middle
+
+v2022.09.29dev:
+
+* Fixed weapons not working without steam
+* Fixed the start car not being saved if it is the new one
+* Fixed not being able to move until pause/unpause at start
+
+v2022.09.25cdev:
+
+* Added window roll down feature
+* Added new car
+* Added thumbleweed
+* Added new music to neon synth radio
+* Synced shoot, melee weapon damage eachother
+* Synced firearm shot sound, flash
+* Synced burp, fart sounds
+? bike driveable by client
+* Power pole cable optimization
+	Dev menu:
+ - suicide, revive [F9]
+ - random ragdol spawn button [F8]
+ - Depth vision [End]
+
+* ragdoll physics lock better
+* new ammo box for the gun
+
+
+v2022.07.20bdev:
+
+* Changed "Lobbies" button label to "Multiplayer"
+* Added Shotgun
+* Picked up stuff now rotates using physics
+* Crates are breakable
+* breakable stuff ignores the mass of the thing it collided with,
+so they are easier to transport
+* Multiplayer button only visible if the game is started through steam
+* Bunny ragdols very slightly more stable
+(Disabled self collision)
+* Synced Ammo
+* Synced sponge and wire brush being broken
+* Synced push
+* Synced weapon state and a few sounds
+* Synced spray can color
+* Synced door open/close sounds
+* Synced client breaking things
+? Removed ~300m physics distance limit from host
+
+
+v2022.06.23dev_multitest:
+
+* Added power pole cables
+* Added colliders to other players
+* Added physics lock setting in misc tab
+-In multiplayer the server's setting is used
+-Things in trunk are getting locked only if it is closed
+-Parts which fall off after collision won't have
+their physics locked until picked up
+* Synced physics locked items position and rotation
+* Synced Food
+* Fixed unused stuff spawning
+(like square headlights next to round headlight car variant)
+? Fixed players flying here from far away, when standing up from a seat
+* Fixed players being twisted
+(now they should be only as twisted as in single player)
+* Items disappearing (or being unsynced) should be less frequent
+
+
+v2022.04.18cdev_multitest:
+
+* More stable join
+(less car falling apart)
+* Smoothed bulging eyeballs when zooming
+* Smoothed picked up items sync a bit more 
+
+
+v2022.04.17edev_multitest:
+
+* Added bulging eyes when zooming
+
+
+v2022.04.17ddev_multitest:
+
+* Synced car variants a bit more
+* Synced license plates texts
+* Synced radio devices
+* Synced radio channels
+* Fixed everyone teleporting when someone joins
+* Smoothed picked up items sync a bit
+* Can steal items from other players
+
+
+v2022.04.14bdev_multitest:
+
+* Added "DevBacon" checkbox to the developer menu
+which turns on beacons above buildings, so it is easier to find them
+* maybe Fixed Car04, Car06P, Bus02 not being driveable
+(because of some seat list having more elements than it really has)
+* Synced car variants a bit
+* Fixed players's clothes colors a bit more
+
+
+v2022.04.12dev_multitest:
+
+* Synced painting or fixing something
+* Synced bus doors and stop buttons
+* Synced attachable things (except trailers)
+(not working properly when attached to world (buildings, terrain...))
+* Synced server destroying an item
+(breaking something should cause it to dissapear from clients too)
+
+* Fixed terrain difference at start
+* Fixed car falling apart constantly at clients
+(sometimes wheels still may fall off, removing and mounting them again fixes it)
+* Fixed items stored in other player's inventory
+floating around and bugging inside other stuff
+(except held and equipped items)
+* Fixed passenger unwillingly causing interference for the driver
+when both of them are clients
+(sitting in the same seat may still cause errors)
+* Fixed players's clothes colors and such not always being the same
+(it can be different for a few seconds, but then it should fix itself)
+
+* Added female character
+* Player "animation" sync a bit more accurate
+(Body is still twisted most of the time,
+but the hands are pointing the right direction)
+* Vehicle position sync is more frequent
+* Picking up something removes it from
+physics lock for other players too
+* Mounted, Attached, Stored items aren't sending position updates
+(because it shouldn't be needed, so it's a bit more optimized)
+* Input disabled while multiplayer window is open
+* Fixed Screenshot keys not rebinding
+
+
+v2022.03.16:
+
+* maybe Fixed "item duplicating" bug again hopefully
+(or just made it more rare)
+* Fixed falling to emptyness when saving and loading while sitting on a sledge
+* Fixed attached things to the sled disappearing on load
+* Sledge can slide even if you are not sitting on it,
+but it needs enough weight attached
+(for example with baskets)
+
+v2022.03.12:
+
+* Added glass shoot decal
+(not working yet on the glass parts of the starting house doors)
+* Added random size for decals
+* Cobwebs and glass no longer stop bullets
+* Shooting food is now separating it to more pieces
+* Physics lock storage spaces (like baskets and glove boxes)
+now lock things when they spawn, so loading a save with
+many items stored in them should be more stable
+* Fixed sledge not staying Physics locked after pausing
+* Fixed siphon hose getting picked up instantly after sticking it in a tank
+* Fixed not being able to throw parts when a mounting point is close to them
+* Fixed shooting and car starting-stopping sounds staying behind when moving fast
+
+v2022.03.11:
+
+* Fixed "item duplicating" bug when loading a save
+(it wasn't really duplicating, but spawning new ones,
+regardless it is hopefully fixed now, but needs testing to be sure)
+* Fixed not being able to move the head around in cars with Q
+when drive headbob is turned off
+* Fixed car parts being misaligned
+(may break some other thing in the future, but that will be fixed then 
+(and then that will break some other thing))
+* Fixed new car's glove box door's condition being leather
+
+v2022.03.9c:
+
+* Fixed stars not moving with time
+* Fixed too much steering when the same buttons are set for steering twice
+* Fixed small visual bugs on the new car
+* Fixed Hide Hud button not being changeable
+* Fixed windowed mode not having borders
+
+v2022.03.06d:
+
+* Added Force Manual Transmission to the Controls in the Settings
+* Fixed sunglasses and such appear on the camera
+with the outside view when the player model is disabled
+* Fixed the new car's glove box change to a different one
+when loading a save
+(already existing saves will still have the wrong one)
+* Fixed grass being in the workshop/garage building
+(no idea how, just copied a different grass interact thing there
+which is exactly the same in every way, yet it still works now
+and it didn't before)
+* Adjusted interior triggers of the new car
+
+v2022.03.06c:
+
+* Fuel consumption+50%
+* Oil consumption+50%
+* Re-Added sledge
+* Added soccer ball
+* Added new magazines
+* Added new car
+* Added burnout smoke
+* Added mouse driving (Default On/Off key: U)
+* Added small AM radio channels
+* Changed Custom Radio From FM 99.2 to AM 1080
+* Cars are bouncing a bit when starting the engine
+* Middle mirror's rotation is no longer inverted upside down
+*(similar items's isn't either)
+* Exhaust smoke's color is different based on the fuel
+
+* A few more items are affecting the grass
+* New Menu:
+* Ingame controls
+* Ingame resolution setting
+* Added steering sensitivity slider
+* Removed unity resolution dialog
+* Tried to move to new unity version, but failed (from 2019.2.21f1 to 2021.2.8f1)
+
+v2021.11.01c:
+
+* Darude
+* Pumpkin spawn based on date
+(and it is wearable)
+
+v2021.10.13:
+
+* Added basket-like storage to ashtrays and to the
+doors of the new car from last update
+* Added inventory icon for the machine gun and the cap
+* Fixed revolver unloading
+* You can now unload ammo boxes to other boxes
+(this far you could only reload the one you held from other boxes)
+* You can enable always show hp, food... bars in the settings
+* They will show by themselves once, if the hp goes below 25%
+* Unbound Keyboard Look
+because binding it to N caused errors with shifting
+and to my knowledge no one used Keyboard Look anyway
+
+
+v2021.10.10:
+
+* Fixed sound interruptions again
+(hopefully for real this time)
+* Disabled the annoying unity developer console
+(it will come back next time I forgot to uncheck it)
+* Fixed the tube not stopping sucking the liquid
+from the tanks/containers after you pulled it out
+(still plays the particle system for some reason,
+but at least it won't suck your d... fuel out)
+
+
+v2021.10.09c:
+
+* added a cap
+* added fridge
+* added new car(s)
+* added 3D VLC icon
+* added new seat covers
+* added new door sounds for the two stroke car
+* added impostors (far away objects are 2D, performace should be better)
+* added hum (hold [Caps Lock] volume: mouse right-left, pitch: mouse up-down
+select type: scroll up-down)
+* added food
+* added survival stuff:
+hp
+food
+water
+(you can disable starving and dehydration in the main menu)
+(or maybe it is disabled by default, and you have to enable it)
+(you can look at the bars with either P or B)
+* fixed a few texture unwrap errors on cars
+* fixed revolver bullets not showing when unloading to an other one
+and now the bullets are almost where they should be, when loading a save
+* reduced terrain flashing in the distance
+* few minor collider adjustments on cars
+* terrain tiles have seamless normals
+* fog got better
+* cacti and desert mountains are not spawning on other biomes
+* cigarettes are now working
+* game's size got decreased by about 50%
+* Set audio priorities again, so there should be less sound effect interruptions
+in most of the situations
+* Disabled teleporting things (and player) up from under the map,
+because it was causing performace problems, and wasn't working well anyway
+
+
+v2021.07.02:
+
+* Default biome option renamed to mixed
+* Added leg
+(as a decorative item and melee weapon, not a position changing device)
+* Fixed weapons always spawning without ammo
+* Fixed paintspray displaying it's real amount instead of rounding it
+* Fixed empty items in the items list causing error
+now they will just spawn a pink cube at most
+
+
+v2021.07.01:
+
+* Added biomes, so you no longer have to select them,
+you will reach them as you travel
+(But you can still select one and then everything will be that one)
+
+v2021.06.20:
+
+* Fixed the pickup-camera stuck bug when holding something which has no ammo
+but trying to pickup something which has
+
+
+v2021.06.19:
+
+* Added shovel (as a melee weapon, not for digging)
+* Added machine gun (and ammo for it)
+* Added licence plate inventory icon
+* Added sunglasses
+* Added hat
+you can put them on with Tab, and take off with X
+* New Revolver model
+* Changed the air rifle a bit, and now it's wooden parts show it's "wear level" too
+* Fixed attached mirrors not being adjustable after loading
+* Fixed being able to attach the basket to something inside it 
+and so freezing it in place
+* Firearms can now be recentered without equipping (by holding Tab)
+and they can be moved around almost like in JP Trespasser
+* And you can now unload them
+* And they have recoil animation
+* Fixed not having Anisotropic Filtering enabled on the grass mode's road
+* Reduced occasional flickering
+* Fixed blood splatter position on the truck
+* Set audio priorities, so sound effects should not interrupt eachother anymore
+(or at least not so frequently)
+* If you (or your car) somehow fall under the map, you should now be teleported up
+with any stuff which is under the map
+* Fixed rear seat slot trigger in wagons making hard to pickup smaller items
+* Fixed bike mirror saying "Continue" instead of "Adjust Mirror"
+* Fixed an inventory load bug
+* Fixed crash on loading a save in which one basket is in an other which is in the first one...
+* Fixed map generation not starting because of some other issue, so if you had a save
+in which you were just falling to you death, you may want to try if it works now or not
+(thank you for the bug reports and save files you sent, without them I couldn't have fix these)
+
+
+v2021.06.05:
+
+* Added ammo for the revolver, you can now reload it
+(if you load an older version save you will not have ammo in you weapons,
+because the weapon script got heavily changed, so they can be 
+more realistic, and it will be easier to add weapons in the future)
+* You can now transfer ammo from one box to the other
+* Fixed fluid names not using translation
+* Fixed the computer's "Ready" text appearing where it's cursor was
+when it was turned off
+* Fixed a few items not staying in inventory after loading
+* Hopefully no new bugs added
+
+
+v2021.06.04C:
+
+* Fixed Rabbit run over (hopefully)
+* Fixed coolants and engines sometimes being too heavy (hopefully)
+* As a "side effect" now every part on the car affects it's weight
+So from now on the car will really be lighter without bumpers, doors, you...
+* The moped's balance got much better
+* Attaching and removing license plates got a lot more easier
+* The moped's basket is now attachable to anywhere
+and the items you store in it won't fall out unless you pick them up,
+like in the truck's fuel can holder
+(it only works if the item is not falling out as soon as you release it,
+it has to stay there a litte bit, and then the physics is removed)
+* Same with the gloveboxes in every vehicle
+* You can now coil up the siphon hose a bit (by holding R)
+so it is easier to put it in the glovebox
+* And you can drain fluids with it from containers/tanks,
+without needing an other one
+* the sink's hole is now actually a hole (it has no collider there)
+* small script optimizations and even smaller model optimizations
+* fixed "Saved!" text not using translations
+
+
+v2021.06.01B:
+
+Loading older saves is possible, but
+car parts may be in the wrong place on the car
+buildings may be somewhere else 
+and near them there is a risk that you will fall under the terrain.
+Other than these you should be able to continue old saves.
+
+* Added new shoot decals
+* Added multiple language support
+(language txts go in [Install Folder]/TheLongDrive_Data/Languages/)
+* Added new vehicles
+* Added a new building
+* Added giraffe balloon
+* Added License plates
+* Added clocks
+* and a few other items (and a secret one)
+* Added New Radio Stuff
+* Added grass mode
+* Added ability to rub or touch everything with your hand (key: Alt)
+(also good for waving)
+* Katana is working
+* Mirrors can be attached to almost anywhere
+* Changed water tap model
+* Changed trailer model
+* Changed barrel model
+* Sitting poses look more realistic
+* Fixed Loading text not showing in main menu when pressed continue
+* Fixed wheels moving back and forth when the car is not moving
+* Fixed cars not reaching top speed
+(I had clutch axis enabled, so this "issue" was there only for me)
+* Maybe fixed rabbit spawn, which was working before,
+but I still had to fix it, because it wasn't for some reason
+* Fixed some texture and rust problems with the buses
+* Fixed being able to open glove stores on a few cars after dismounting
+* Fixed Paint and other cans not exploding from other explosions
+* Fixed the neon lamp not having collider
+* Fixed two of the car doors being only 1 kg
+* Slightly improved door squeak
+* Minor optimization with materials
+* Now more fluid containers contents can affect the same object's mass
+* If you push the car while you are in the air, you will push yourself back
+
+
+v2020.12.24:
+
+* Added small music box
+you have to crank it with the mouse,
+and you can change the music it plays from the data folder
+* Added 'music' mode for the computer
+you can play it almost like a piano
+* Replaced gas can model
+* Fixed glass's position in the cabin in the desert
+* Fixed one of the car doors not having collision sound
+* Fixed not being able to smooth crouch while holding an item (you have to hold Q and then scroll)
+* Changed discord link to the new one: https://discord.gg/ftxZDVEzzT
+
+v2020.11.26c:
+
+* Added winter mode (you can disable it. It is less detailed than last year)
+* Added bullet particle effect
+* Fixed H-Shifter neutral (you have to enable it in the steering wheel settings)
+* Fixed new car:
+- mirror not moving when opening the right door
+- fluids in engine and coolant not randomized
+- steering wheel unwrap
+* TV can explode now
+* Disabled pumpkin spawn
+* Removed pumpkin head
+* Removed "development build" text from background image (with GIMP)
+
+v2020.10.21:
+
+* Added cloud shadows
+* Added a new car
+* Added new radio station
+* Added 360 degree camera and screenshots (F7)
+* Added TV, you can plug the computer in it
+(this feature is very incomplete, don't expect too much yet)
+* Added metal hollow sections, which you can attach to anywhere
+(upon loading, it may face in the wrong way if you
+attached it to a door or hood..., but on the body it should work)
+* ReAdded pumpkins
+* Added cobwebs
+* ReAdded an old handy item from the winter update
+* Fixed transmission stick not cleaning in the previous new car
+* handbrakes and lights can now be turned on/off with E
+* raised spawn points at the building which has the bridge
+* steering wheel rotation is more smooth
+* reflections optimized:
+they are now updating faster because
+the reflection probes which are far away are turned off
+and the resolution is lower.
+removed real time checkbox from settings
+* bike balance max force increased
+* if you put a txt in the game's data folder named: "usb.txt"
+and write a port name in it (example: "COM5")
+the game will send your ingame speed to that port,
+so with an arduino you can make your own
+real life speedometer for the game
+(it sends one byte (0-255))
+
+v2020.07.31c:
+
+* fixed drop cam teleporting away error
+* fixed axis values showing in the game by default if you don't have the settings file
+* fixed trunk window floating (in the two stroke kombi)
+* secret vehicle now spawns somewhere else too 
+
+v2020.07.31b:
+
+* added motorcycle
+* added clouds
+* added leaning while not sitting, press Q (not hold)
+* added top down "map" view with m-key
+* added new radio content
+* added player model, it is using it's hand to interact with things,
+ and it is customizable from the settings
+ (mostly colors, but you can remove hair, eyebrows and MUSTACHE)
+* added E+mouse up/down control for tuning things like radio, water tap...
+* added lights on poles
+* added small drop cam [F4], works on foot too, can be displayed on secondary monitors
+* added ability to steer while pushing the car from the driver's side door
+ (look at the wheel and press F then W/S push forward/backward, A/D steer left/right)
+
+* 3rd person camera is now working anywhere you sit, not just in cars
+* more realistic engine, clutch behaviour
+* better automatic transmission
+* wheel slip range changed (new tires have better grip, worn ones have worse)
+* brake powers changed (decresed a bit, but should cause to stop sooner)
+* paint color spawn is slightly more varied
+* you are now able to use held item after death, like shooting a gun
+* decreased push force
+* decreased custom radio volume
+* removed unity logo from the start
+
+* fixed item spawn chance error (too much cleaning stuff and nothing else, so small car parts are back!)
+* fixed not dying from shooting yourself while sitting
+* fixed being able to open/close doors from far away
+* fixed an error where you couldn't load a save
+ (actually just made the code ignore the error, but it works for now)
+* fixed being able to push the car while inside
+* MOST IMPORTANT: fixed poop not saving
+
+* smmoth: transition when getting out of the car
+* smooth: tankcap open/close
+* smooth: lightswitch 
+* smooth: gearstick and handbrake
+
+----------
+
+v2020.06.12c:
+
+* Added custom radio station at fm 99.2, supports: ogg, wav, mp3
+(you can enable it in the settings, keep in mind that mp3 loading is much slower compared to ogg, it can cause lag when a new song comes)
+* Fixed settings not saving
+* Fixed Reverse, Brake and Tail lights not behaving as intended
+* Slightly decreased cleaning stuff spawn
+
+v2020.06.11c:
+
+* Fixed trailers not working
+
+v2020.06.11b:
+
+* Fixed new Vehicle's rear right door only opening visually, not physically
+* Added these lines to the news
+
+v2020.06.11:
+
+* Saves, Screenshots, Settings are now stored in the documents folder
+c:\Users\YourName\Documents\TheLongDrive\
+if you want to continue your old save, you have to move it there, previously they were stored in the data folder inside the game's install folder
+* Added Paint Cans to paint cars
+* Added Wire Brush to remove rust
+* Added Sponge and Polisher Liquid to make your car shiny and to wash off blood
+(it no longer disappears after reloading the game)
+* Added Compass
+* Odometers now move smoothly instead of snapping
+* Trip meter is now saved correctly
+* Engine Cooling and Liquid pouring is now faster while sleeping
+* The weight of your piss (inside you) is now simulated!
+(it affects your overall weight)
+* Doors are now easier to open (you can look at the glass parts too while opening them)
+* You can now tune things while zooming
+(like the radio)
+* Fixed reflections on mounted car parts being black sometime
+(especially hubcaps) 
+* Fixed trunks and hoods having regular door opening sound
+* Fixed an inventory bug
+* Fixed save button disappearing
+* Fixed a few collider issues on cars
+* Fixed a collider issue when putting down stuff from right hand
+* Fixed rear doors not spawning
+* There are now news about the updates in the main menu
+* Added A New Vehicle {-.-}
+
+v2020.05.28:
+
+* Added peaceful mode
+* Added trip meter for one of the cars
+* Fixed driving controls help not showing in that car
+* Fixed fluids not pouring from car tanks (broke taps)
+* Fixed taps (hopefully didn't broke anything)
+* Fixed one of the wagons and its trunk not spawning
+* Fixed bullet holes rotation
+* Limited rabbit count
